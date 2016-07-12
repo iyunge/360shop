@@ -4,17 +4,30 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Document</title>
+	<title>360智能商城</title>
 	<link rel="stylesheet" href="css/index.css">
 	<link rel="stylesheet" href="css/response.css">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="Swiper-3.3.1/dist/css/swiper.min.css">
+	<!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
 </head>
 <body>
 	<div class='body'>
 		<!-- banner -->
 		<div class='banner'>
-			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-			  <!-- Indicators -->
+		    <div class="swiper-container">
+		        <div class="swiper-wrapper">
+		            <div class="swiper-slide"><a href=""><img src="images/1.jpg" alt=""></a></div>
+		            <div class="swiper-slide"><a href=""><img src="images/2.jpg" alt=""></a></div>
+		            <div class="swiper-slide"><a href=""><img src="images/3.jpg" alt=""></a></div>
+		            <div class="swiper-slide"><a href=""><img src="images/4.jpg" alt=""></a></div>
+		            <div class="swiper-slide"><a href=""><img src="images/5.jpg" alt=""></a></div>
+		            <div class="swiper-slide"><a href=""><img src="images/6.jpg" alt=""></a></div>
+		        </div>
+		        <!-- Add Pagination -->
+		        <div class="swiper-pagination"></div>
+		    </div>
+
+<!-- 			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 			  <ol class="carousel-indicators">
 			    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
 			    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
@@ -23,7 +36,6 @@
 			    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
 			    <li data-target="#carousel-example-generic" data-slide-to="5"></li>
 			  </ol>
-			  <!-- Wrapper for slides -->
 			  <div class="carousel-inner" role="listbox">
 			    <div class="item active">
 			      <img src="images/t01bc0b24a2acb22787.jpg" alt="">
@@ -56,7 +68,7 @@
 			      </div>
 			    </div>
 			  </div>
-			</div>
+			</div> -->
 		</div>
 		<nav class='nav'>
 			<div>
@@ -367,13 +379,30 @@
 		<p></p>
 	</div>
 	<div class="fixed">
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
+		<div><a href="">首页</a></div>
+		<div><a href="">分类</a></div>
+		<div><a href="">购物车</a></div>
+		<div><a href="">我</a></div>
 	</div>
+    <!-- Swiper JS -->
+    <script src="Swiper-3.3.1/dist/js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        slidesPerView: 1,
+        paginationClickable: true,
+        spaceBetween: 0,
+        loop: true,
+        autoplay: 2500,
+        autoplayDisableOnInteraction: false
+    });
+    </script>
 </body>
-<script src='js/jquery.min.js'></script>
-<script src='js/bootstrap.min.js'></script>
+<!-- <script src='js/jquery.min.js'></script>//bootstrapJS适用 -->
+<!-- <script src='js/bootstrap.min.js'></script> -->
 <script src='js/index.js'></script>
 </html>
