@@ -361,7 +361,7 @@ ul,li,p,a{
 	height: auto;
 	box-sizing:border-box;
 	padding: 0 15px;
-	margin-bottom: 100px;
+	margin-bottom: 200px;
 }
 .tel>p{
 	text-align: center;
@@ -403,13 +403,13 @@ ul,li,p,a{
 
 }
 .fixed div:nth-child(3) a{
-	background-image: url(../images/t01821a03716758d2e1.png);
+	background-image: url(../images/t01069055004f2dcc51.png);
 	background-position: center 0;
 	background-repeat: no-repeat;
 
 }
 .fixed div:nth-child(4) a{
-	background-image: url(../images/t01069055004f2dcc51.png);
+	background-image: url(../images/t01821a03716758d2e1.png );
 	background-position: center 0;
 	background-repeat: no-repeat;
 
