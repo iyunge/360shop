@@ -361,7 +361,7 @@ ul,li,p,a{
 	height: auto;
 	box-sizing:border-box;
 	padding: 0 15px;
-	margin-bottom: 200px;
+	padding-bottom: 200px;
 }
 .tel>p{
 	text-align: center;
